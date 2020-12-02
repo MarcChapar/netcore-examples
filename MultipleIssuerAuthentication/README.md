@@ -7,8 +7,7 @@ To use it just add the following line n the Startup file inside ConfigureService
             services.ConfigureMultipleAuthenticationTokens(Configuration);
            ```
 For it to work you need to have certain keys defined and completed with the proper information inside appsettings. These are:
-            ```yaml
-            {
+            ```json
                 "AzureAdB2C": {
                     "Instance": "",
                     "ClientId": "",
@@ -21,8 +20,6 @@ For it to work you need to have certain keys defined and completed with the prop
                     "Domain": "",
                     "TenantId": ""
                 }
-            }
-
             ```
 Also, you will need to install the following packages:
     Microsoft.AspNetCore.Authentication.AzureAD.UI;
