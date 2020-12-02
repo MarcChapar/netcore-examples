@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Primitives;
 
-namespace Helpers.Security
+namespace AuthMiddleware
 {
     public class CommonAuthMiddleware
     {
