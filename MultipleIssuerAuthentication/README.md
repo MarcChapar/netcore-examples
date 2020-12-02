@@ -5,13 +5,11 @@ This configuration will let your API receive tokens issued by either Azure AD or
 To use it just add the following line n the Startup file inside ConfigureServices():  
 
 
-           ```
             services.ConfigureMultipleAuthenticationTokens(Configuration);
-           ```  
              
 
 For it to work you need to have certain keys defined and completed with the proper information inside appsettings. These are:  
-            ```
+  
                 "AzureAdB2C": {  
                     "Instance": "",  
                     "ClientId": "",  
@@ -24,7 +22,6 @@ For it to work you need to have certain keys defined and completed with the prop
                     "Domain": "",  
                     "TenantId": ""  
                 }  
-            ```  
 
 Also, you will need to install the following packages:  
   
